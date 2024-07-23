@@ -1,0 +1,239 @@
+/* Variants */
+:root{
+    /* Background color */
+    --bg: #AEE7EE;
+
+    /* Neutral colors */
+    --white: #fff;
+
+    /* Text */
+    --dark-text: #464652;
+    --accent-text: #FBB2BD;
+}
+
+
+/*------ MAIN COMPONENTS ------*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: var(--bg)
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 1110px;
+    margin: 0 auto;
+    padding: 40px;
+    
+    border-radius: 10px;
+    background: var(--white);
+}
+
+.main-section{
+    display: flex;
+    margin: 70px 0;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+}
+
+.image{
+    width: 152px;
+    height: 152px;
+}
+
+
+/* Typography */
+
+h1, h2, h3{
+    margin: 0;
+    text-align: center;
+
+    font-weight: 600;
+}
+
+.main-title{
+    text-transform: uppercase;
+    font-size: 50px;
+
+    color: var(--dark-text);
+}
+
+.subtitle{
+    font-size: 25;
+
+    color: var(--accent-text);
+}
+
+.subtitle>span{
+    color: var(--dark-text);
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 25px;
+
+    color: var(--accent-text);
+}
+
+.subtitle-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+
+
+
+/* ---------------- FLEXBOX CONTAINERS ---------------- */
+
+/* --- ROW-CONTAINER --- */
+
+/* Main */
+
+.row{
+    display: flex;
+    gap: 45px;
+}
+
+.row-container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+/* 1 row */
+.row-wrapper:first-child>.row{
+    justify-content: start;
+}
+
+/* 2 row */
+.row-wrapper:nth-child(2)>.row{
+    justify-content: center;
+}
+
+/* 3 row */
+.row-wrapper:nth-child(3)>.row{
+    justify-content: end;
+}
+
+/* 4 row */
+.row-wrapper:nth-child(4)>.row{
+    justify-content: space-between;
+}
+
+/* 5 row */
+.row-wrapper:nth-child(5)>.row{
+    justify-content: space-around;
+}
+
+/* 6 row */
+.row-wrapper:last-child>.row{
+    width: 546px;
+    flex-wrap: wrap;
+    column-gap: 45px;
+    row-gap: 20px;
+}
+
+
+
+
+/* --- COLUMN-CONTAINER --- */
+
+/* Main */
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.column-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Columns */
+
+/* 2 column */
+.column-wrapper:nth-child(2)>.column{
+    flex-direction: column-reverse;
+    gap: 0;
+    justify-content: center;
+    height: 100%;
+}
+
+/* 3 column */
+.column-wrapper:nth-child(3)>div>.image_red{
+    order: 1;
+}
+
+
+
+
+/* --- COLUMN-WRAP CONTAINER --- */
+
+/* Main */
+
+.column-wrap-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 150px;
+}
+
+.column-wrap{
+    display: flex;
+    flex-flow: column wrap;
+    width: 392px;
+    height: 546px;
+    column-gap: 88px;
+    row-gap: 45px;
+}
+
+/* 2 column-wrap */
+.column-wrap-wrapper:nth-child(2)>.column-wrap{
+    justify-content: center;
+}
+
+/* 3 column-wrap */
+.column-wrap-wrapper:nth-child(3)>.column-wrap{
+    flex-flow: row wrap;
+}
+
+.column-wrap-wrapper:nth-child(3){
+    margin: 0 auto;
+}
+
+
+
+
+/* --- THANK YOU --- */
+
+.container_thankyou{
+    align-items: center;
+    gap: 24px;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox cats</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+    <section class="main-section">
+
+        <!------ Title ------>
+        <div class="container">
+            <h1 class="main-title">Flexbox</h1>
+        </div>
+
+        <!------ FLEXBOX ------>
+        
+        <!-- ROW-CONTAINER
+        justify-content, gap, flex-wrap -->
+
+        <div class="container">
+
+            <!-- Title -->
+            <h2 class="title">justify-content, gap, flex-wrap</h2>
+
+            <!-- Row container -->
+            <div class="row-container">
+
+                <!-- 1 row -->
+                <div class="wrapper row-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>justify-content:</span> start</h3>
+                    </div>
+                    <!-- Row -->
+                    <div class="row">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+                <!-- 2 row -->
+                <div class="wrapper row-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>justify-content:</span> center</h3>
+                    </div>
+                    <!-- Row -->
+                    <div class="row">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+                <!-- 3 row -->
+                <div class="wrapper row-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>justify-content:</span> end</h3>
+                    </div>
+                    <!-- Row -->
+                    <div class="row">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+                <!-- 4 row -->
+                <div class="wrapper row-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>justify-content:</span> space-between</h3>
+                    </div>
+                    <!-- Row -->
+                    <div class="row">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+                <!-- 5 row -->
+                <div class="wrapper row-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>justify-content:</span> space-around</h3>
+                    </div>
+                    <!-- Row -->
+                    <div class="row">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+                <!-- 6 row -->
+                <div class="wrapper row-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>flex-wrap:</span> wrap</h3>
+                    </div>
+                    <!-- Row -->
+                    <div class="row">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- COLUMN-CONTAINER
+        flex-direction, align-items, reverse, order  -->
+
+        <div class="container">
+
+            <!-- Title -->
+            <h2 class="title">flex-direction, align-items, reverse, order</h2>
+
+            <!-- Column container -->
+            <div class="column-container">
+
+                <!-- 1 column -->
+                <div class="wrapper column-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>flex-direction:</span> column</h3>
+                        <h3 class="subtitle"><span>align-items:</span> center</h3>
+                    </div>
+                    <!-- Column -->
+                    <div class="column">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+
+                <!-- 2 column -->
+                <div class="wrapper column-wrapper">
+
+                    <!-- Subitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>flex-direction:</span> column-reverse</h3>
+                        <h3 class="subtitle"><span>justify-content:</span> center</h3>
+                    </div>
+                    <!-- Column -->
+                    <div class="column">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+
+                <!-- 3 column -->
+                <div class="wrapper column-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>flex-direction:</span> column</h3>
+                        <h3 class="subtitle"><span>align-items:</span> center</h3>
+                        <h3 class="subtitle"><span>order image_red:</span> 1</h3>
+                    </div>
+                     <!-- Column -->
+                    <div class="column">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- COLUMN-WRAP CONTAINER
+        flex-flow, align-content -->
+
+        <div class="container">
+
+            <!-- Title -->
+            <h2 class="title">flex-flow, align-content</h2>
+
+            <!-- Column-wrap container -->
+            <div class="column-wrap-container">
+
+                <!-- 1 column-wrap -->
+                <div class="wrapper column-wrap-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>flex-flow:</span> column wrap</h3>
+                    </div>
+                    <!-- Column-wrap -->
+                    <div class="column-wrap">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+
+                <!-- 2 column-wrap -->
+                <div class="wrapper column-wrap-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>flex-flow:</span> column wrap</h3>
+                        <h3 class="subtitle"><span>justify-content:</span> center</h3>
+                    </div>
+                    <!-- Column-wrap -->
+                    <div class="column-wrap">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+
+                <!-- 3 column-wrap -->
+                <div class="wrapper column-wrap-wrapper">
+
+                    <!-- Subtitle -->
+                    <div class="subtitle-wrapper">
+                        <h3 class="subtitle"><span>flex-flow:</span> row wrap</h3>
+                    </div>
+                    <!-- Column-wrap -->
+                    <div class="column-wrap">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                        <img src="img/gray-cat.svg" alt="cat" class="image">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Thank you -->
+        <div class="container container_thankyou">
+
+            <!-- Cat -->
+            <img src="img/red-cat.svg" alt="red cat" class="image image_red">
+            <!-- Thank you -->
+            <h2 class="title">Спасибо за проверку!</h2>
+            
+        </div>
+
+    </section>
+</body>
+</html>
